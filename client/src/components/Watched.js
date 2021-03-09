@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 
 function Watched() {
-  return <div>watched</div>;
+  return <div>hi</div>;
 }
 
 export default Watched;

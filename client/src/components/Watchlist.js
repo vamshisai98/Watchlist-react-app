@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../Context/GlobalState';
 
 function Watchlist() {
+  const { watchlist } = useContext(GlobalContext);
   return (
     <div>
-      <h1>Watchlist</h1>
+      {watchlist.map((movie) => (
+        <h1 key={movie.id}>{movie.title}</h1>
+      ))}
     </div>
   );
 }
